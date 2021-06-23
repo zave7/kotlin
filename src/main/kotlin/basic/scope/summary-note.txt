@@ -1,0 +1,8 @@
+Function | Object reference     | Return value	  | Is extension function                       |
+---------|----------------------|-----------------|---------------------------------------------|
+let	     | it	                | last expression | Yes                                         |
+run	     | lambda with receiver	| last expression | Yes                                         |
+run	     | -	                | last expression | No: called without the context object       |
+with	 | lambda with receiver	| last expression | No: takes the context object as an argument |
+apply	 | lambda with receiver	| Context object  | Yes                                         |
+also	 | it	                | Context object  | Yes                                         |

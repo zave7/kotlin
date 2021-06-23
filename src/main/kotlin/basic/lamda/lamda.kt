@@ -11,7 +11,7 @@ package basic.lamda
 val square : (Int) -> (Int) = { number -> number*number}
 //val square2 = {number : Int -> number*number} 이런식으로도 가능
 
-val nameAge = {name : String, age : Int ->
+private val nameAge = {name : String, age : Int ->
     "my name is ${name} I'm ${age}"
 }
 

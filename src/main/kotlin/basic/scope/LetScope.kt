@@ -6,7 +6,7 @@ package basic.scope
 //      ㄴ 컨텍스트 객체를 람다 인자로 가진다
 //      ㄴ 암시적인 기본 이름인 it 으로 접근이 가능하다
 // 2. 리턴값
-//      ㄴ 람다식의 결과를 리턴 ( scope 의 마지막 값을 리턴한다 )
+//      ㄴ 함수 리터럴의 마지막 expression ( scope 의 마지막 값을 리턴한다 )
 
 class LetScope(val name: String, val age: Int?) {
 
