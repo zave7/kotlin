@@ -1,5 +1,7 @@
 package basic.scope
 
+import kotlin.jvm.internal.Ref
+
 // scope 함수 `let`
 
 // 1. 객체의 컨텍스트를 참조하는 방식

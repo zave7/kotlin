@@ -18,10 +18,11 @@ fun main() {
 
     // 1. 람다 수신자
     // 프로퍼티에 바로 접근이 가능하다
-    // 스코프 함수 apply 의 타입이 수신 객체 타입이기 때문이다.
+    // 스코프 함수 apply 의 타입이 수신 객체 타입이기 때문이다
     val applyScope: ApplyScope = ApplyScope("apply", 1).apply { println("age: $age")}
 
     // 2. 컨텍스트 객체를 반환하기 때문에 체이닝 방식으로 작성 가능
+    // 메서드 참조는 중괄호 없이 사용한다
     applyScope.apply(ApplyScope::printName).apply { println("모든 프로퍼티를 출력했어요!") }
 
 }
